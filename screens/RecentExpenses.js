@@ -4,7 +4,7 @@ import ExpensesOutput from "../components/ExpensesOutput/ExpensesOutput";
 
 const RecentExpenses = () => {
   return (
-    <View>
+    <View style={styles.container}>
       <ExpensesOutput expensesPeriod="Last 7 days" />
     </View>
   );
@@ -13,8 +13,7 @@ const RecentExpenses = () => {
 export default RecentExpenses;
 
 const styles = StyleSheet.create({
-  text: {
-    fontSize: 24,
-    color: "crimson",
+  container: {
+    flex: 1,
   },
 });

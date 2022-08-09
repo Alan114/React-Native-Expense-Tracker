@@ -4,7 +4,7 @@ import ExpensesOutput from "../components/ExpensesOutput/ExpensesOutput";
 
 const AllExpenses = () => {
   return (
-    <View>
+    <View style={styles.container}>
       <ExpensesOutput expensesPeriod="Total" />
     </View>
   );
@@ -13,8 +13,7 @@ const AllExpenses = () => {
 export default AllExpenses;
 
 const styles = StyleSheet.create({
-  text: {
-    fontSize: 24,
-    color: "crimson",
+  container: {
+    flex: 1,
   },
 });

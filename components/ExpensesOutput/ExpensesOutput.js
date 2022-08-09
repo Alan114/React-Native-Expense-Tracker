@@ -35,6 +35,18 @@ const DUMMY_EXPENSES = [
     amount: 29.99,
     date: new Date("12-08-2022"),
   },
+  {
+    id: "e6",
+    description: "Proteins",
+    amount: 59.99,
+    date: new Date("26-08-2022"),
+  },
+  {
+    id: "e7",
+    description: "Present",
+    amount: 9.99,
+    date: new Date("30-08-2022"),
+  },
 ];
 
 const ExpensesOutput = ({ expenses, expensesPeriod }) => {
@@ -51,7 +63,8 @@ export default ExpensesOutput;
 const styles = StyleSheet.create({
   container: {
     flex: 1,
-    padding: 24,
+    paddingHorizontal: 24,
+    paddingTop: 24,
     backgroundColor: GlobalStyles.colors.primary700,
   },
 });
