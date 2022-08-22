@@ -1,13 +1,12 @@
 import axios from "axios";
 
 const URL =
-  "https://rn-expense-tracker-954d6-default-rtdb.europe-west1.firebasedatabase.app/expenses.json";
+  "https://rn-expense-tracker-954d6-default-rtdb.europe-west1.firebasedatabase.app";
 
 export function storeExpense(expenseData) {
   axios.post(URL + "/expenses.json", expenseData);
 }
 
-// console.log(response.data);
 export async function fetchExpenses() {
   const response = await axios.get(URL + "/expenses.json");
 
